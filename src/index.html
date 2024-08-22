@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.scss">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -17,7 +18,7 @@
     <div class="container">
       <img class="hero__logo" src="images/ebac_logo.svg" alt="EBAC">
       <p class="hero__text">
-        O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+        O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
       </p>
       <div class="infos-bar">
         <ul class="infos-bar__infos">
@@ -40,6 +41,49 @@
       </div>
     </div>
   </header>
+
+  <div class="background">
+    <section class="event front-end" data-aos="fade-right">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">Front-end</h2>
+          <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint numquam aspernatur excepturi consequatur perspiciatis, sed hic, corrupti nemo fuga, ipsum saepe eligendi. Exercitationem assumenda magni sequi ex, voluptatem corporis.</p>
+        </div>
+        <img class="event__image" src="images/frontend.png" alt="Front-end">
+      </div>
+    </section>
+    <section class="event event--image-left" data-aos="fade-left">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">Back-end</h2>
+          <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint numquam aspernatur excepturi consequatur perspiciatis, sed hic, corrupti nemo fuga, ipsum saepe eligendi. Exercitationem assumenda magni sequi ex, voluptatem corporis.</p>
+        </div>
+        <img class="event__image" src="images/backend.png" alt="Front-end">
+      </div>
+    </section>
+    <section class="event ui-ux" data-aos="fade-right">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">UI / UX</h2>
+          <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint numquam aspernatur excepturi consequatur perspiciatis, sed hic, corrupti nemo fuga, ipsum saepe eligendi. Exercitationem assumenda magni sequi ex, voluptatem corporis.</p>
+        </div>
+        <img class="event__image" src="images/ui-ux.png" alt="Front-end">
+      </div>
+    </section>
+    <section class="event event--image-left" data-aos="fade-left">
+      <div class="container">
+        <div class="event__details">
+          <h2 class="event__details__title">Data Science</h2>
+          <p class="event__details__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam sint numquam aspernatur excepturi consequatur perspiciatis, sed hic, corrupti nemo fuga, ipsum saepe eligendi. Exercitationem assumenda magni sequi ex, voluptatem corporis.</p>
+        </div>
+        <img class="event__image" src="images/data.png" alt="Data-science">
+      </div>
+    </section>
+  </div>
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 
 </html>
